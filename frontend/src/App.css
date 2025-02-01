@@ -1,0 +1,112 @@
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('imgs/8.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Loading Spinner */
+.loading {
+  background-color: aliceblue;
+  height: 25%;
+  width: 25%;
+  position: relative;
+  bottom: 50%;
+}
+
+/* Container Styling */
+.container {
+  position: relative;
+  left: 5%;
+  align-self: center;
+  width: 80%;
+  max-width: 80%;
+  padding: 40px;
+  background: rgba(34, 32, 32, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
+}
+
+.intro {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.upload-container {
+  margin-top: 30px;
+  background: rgba(26, 25, 25, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.upload-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form Layout */
+.upload-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upload-container label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.upload-container .file-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.upload-container input[type="file"] {
+  margin-left: 10px;
+  background: #ffffff1a;
+  color: #ffffffaa;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid #333;
+  width: 70%;
+}
+
+.upload-container button {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-container button:hover {
+  opacity: 0.9;
+}
+
+.upload-container button:active {
+  transform: scale(0.98);
+}
