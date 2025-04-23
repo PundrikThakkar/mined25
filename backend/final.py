@@ -60,7 +60,6 @@ while True:
 cap.release()
 
 
-# ======================================================================================
 # Code for making timestamps
 def solve(test):
     ans = []
@@ -94,22 +93,8 @@ else:
         clips.append(VideoFileClip(video_path).subclipped(interval[0], interval[1]))
         print(interval[0], interval[1])
 
-# ========================================================
-# print(list)
-
-
-# from moviepy import *
-
-# clip1 = VideoFileClip(path).subclipped(90,110)
-# clip2 = VideoFileClip(path).subclipped(325,355)
-# clip3 = VideoFileClip(path).subclipped(400,420)
-# clip4 = VideoFileClip(path).subclipped(1385,1395)
-# clip5 = VideoFileClip(path).subclipped(1580,1588)
 
 video = concatenate_videoclips(clips)
-# video.write_videofile("final/output.mp4")
-# from moviepy import *
-# from moviepy.audio.fx.all import volumex
 
 
 # video_path = "final/temp.mp4"
@@ -136,23 +121,7 @@ if sys.argv[1] == "1":
 
     final_audio = CompositeAudioClip([original_audio, music])
     video = video.with_audio(final_audio)
-    print(
-        "Audio file found==================================================================================================================="
-    )
+    print("Audio file found")
 
 
 video.write_videofile("final/output.mp4", codec="libx264", audio_codec="aac")
-
-
-# original_audio = video.audio
-# video_time=video.duration
-
-# music = AudioFileClip(audio_path).subclipped(25, 25+video_time)
-
-# music = music.with_effects([afx.MultiplyVolume(0.3)])
-
-
-# final_audio = CompositeAudioClip([original_audio, music])
-# video = video.with_audio(final_audio)
-
-# video.write_videofile("final/output.mp4", codec="libx264", audio_codec="aac")
